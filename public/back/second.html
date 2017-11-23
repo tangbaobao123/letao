@@ -67,8 +67,31 @@
 
         <!--内容区域-->
         <div class="lt_content">
-            <div class="pic_left pull-left">11</div>
-            <div class="pic_right pull-right">22</div>
+        <!--添加分类-->
+            <tutton class="btn btn-default mb_20 btn_add">添加分类</tutton>
+            <!--分类表格-->
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <td width="10%">序号</td>
+                    <td width="30%">一级分类名称</td>
+                    <td width="30%">二级分类名称</td>
+                    <td width="30%">二级分类LOGO</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>耐克</td>
+                        <td>板鞋</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--分页-->
+            <div class="text-right">
+                <ul id="paginator"></ul>
+            </div>
         </div>
     </div>
 </div>
@@ -91,14 +114,27 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<script type="text/html" id="tpl">
+   {{each rows v i}}
+   <tr>
+       <td>{{(page-1)*size+i+1}}</td>
+       <td>{{v.categoryName}}</td>
+       <td>{{v.brandName}}</td>
+       <td><img src="{{v.brandLogo?v.brandLogo:'img/none.png'}}" width="50" height="50" alt=""></td>
+   </tr>
+    {{/each}}
+    
+</script>
+
 
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+<script src="lib/bootstrap-paginator/bootstrap-paginator.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
-<script src="lib/echarts/echarts.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
-<script src="js/index.js"></script>
+<script src="js/second.js"></script>
 
 </body>
 </html>

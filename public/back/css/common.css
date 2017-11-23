@@ -15,8 +15,17 @@ a:link,a:visited,a:hover,a:active{
   margin-top: 150px;
 }
 
+.mb_20{
+  margin-bottom:20px;
+}
+
 .panel h4 {
   text-align: center;
+}
+
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
 }
 
 *{
