@@ -95,8 +95,6 @@ a{
   border: 3px solid transparent;
 }
 
-
-
 .lt_aside .nav .child a{
   padding-left: 50px;
 }
@@ -140,5 +138,25 @@ a{
 }
 
 
+.fileupload_box{
+  position: relative;
+  width: 82px;
+  height: 34px;
+}
+
+.fileupload_box:hover button{
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+#fileupload{
+  position: absolute;
+  width: 82px;
+  height: 34px;
+  top:0px;
+  left:0px;
+  opacity: 0;
+}
 
 

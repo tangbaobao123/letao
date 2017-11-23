@@ -62,6 +62,7 @@ $(function () {
                 data:$form.serialize(),//表单序列化
                 //username=wwee&password=123
                 success:function (data) {
+                    console.log(data)
                     //如果成功，就跳转到首页
                     if(data.success){
                         location.href = 'index.html';
@@ -87,3 +88,4 @@ $(function () {
         $form.data("bootstrapValidator").resetForm();
     })
 })
+

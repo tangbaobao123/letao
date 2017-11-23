@@ -56,7 +56,6 @@ $(function () {
 
         fields:{
             categoryName:{
-
                 validators:{
                     notEmpty:{
                         message:"请输入一级分类的名称"
@@ -74,7 +73,7 @@ $(function () {
         $.ajax({
             type:"post",
             url:"/category/addTopCategory",
-            data:$form.serialize(),
+            data:$form.serialize(),//表单序列化
             success:function (info) {
                 if(info.success){
                     // //关闭模态框
@@ -91,9 +90,6 @@ $(function () {
 
                 }
             }
-
-
-
         })
     })
 
