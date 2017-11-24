@@ -94,7 +94,7 @@ $(function () {
             excluded: [],
             //2. 指定校验时的图标显示，默认是bootstrap风格
             feedbackIcons:{
-                valid:'glyphicon glphicon-ok',
+                valid:'glyphicon glyphicon-ok',
                 invalid:'glyphicon glyphicon-remove',
                 validating: 'glyphicon glyphicon-refresh'
             },
@@ -155,3 +155,9 @@ $(function () {
         });
     })
 })
+
+
+
+
+
+
