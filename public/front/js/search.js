@@ -24,7 +24,7 @@ $(function () {
 
   //2. 清空搜索列表
 
-  $(".lt_history").on("click",".btn_empty",function(){
+  $(".lt_history").on("click",".btn-empty",function(){
       mui.confirm("您是否要清空所有的历史记录 ? ","温馨提示",["取消","确定"],function(e){
         if(e.index==1){
           //移除lt_search_history

@@ -29,21 +29,22 @@
             <div class="lt_category_l">
                 <div class="mui-scroll-wrapper">
                     <ul class="mui-scroll">
-                    <!--挖个坑-->
+                        <!--挖个坑-->
                     </ul>
 
                 </div>
             </div>
-             <div class="lt_category_r">
+
+
+            <div class="lt_category_r">
                 <div class="mui-scroll-wrapper">
                     <ul class="mui-scroll">
                         <!--挖个坑-->
                     </ul>
-                
                 </div>
-            </div> 
+            </div>
         </div>
-        
+
         <div class="lt_footer">
             <ul class="mui-clearfix">
                 <li>
@@ -59,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="cat.html">
+                    <a href="cart.html">
                         <span class="fa fa-shopping-cart"></span>
                         <p>购物车</p>
                     </a>
@@ -79,6 +80,8 @@
              <li data-id="{{v.id}}" class="{{i==0?'now':''}}"><a href="javascript:;">{{v.categoryName}}</a></li>
         {{/each}}
     </script>
+
+
     <script type="text/html" id="tpl_r">
            {{if rows.length == 0}}
             <div class="category_tips">该分类下没有更多的品牌信息</div>
@@ -94,9 +97,12 @@
   {{/each}}
 
         </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="js/common.js"></script>
     <script src="js/category.js"></script>
+
 
 </body>
 
